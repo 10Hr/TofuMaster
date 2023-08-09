@@ -17,7 +17,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>My first three.js app</title>
+<title>Tofu Master</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <style>
@@ -47,16 +47,28 @@ cursor: pointer;
 position: absolute;
 width: 100%;
 height: 100%;
-background-color: "white";
+
+}
+#jumpscareImage {
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
 }
 </style>
 </head>
 <body>
-<div id = "counter">
+<div display = "none" id = jumpscareImage>
+<img src = "jumpscare.png"></img>
+</div>
+
+<div display = "none"id = "counter">
 <p style = "font-size:40px; position:absolute; left:3%; top:2%;">
 Collected: </p>
 <p id = "tofuNumber" style = "font-size:40px; position:absolute; left:13%; top:2%;">
 0 </p>
+<p id = "PickingUp" style = "font-size:40px; position:absolute; left:45%; top:30%; color: red">Picking Up...</p>
 </div>
 
 <div id="blocker">
@@ -79,7 +91,13 @@ Move: WASD
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/gh/kripken/ammo.js@HEAD/builds/ammo.js"></script>
-<script type="module" src="tofuMaster.js"></script>
+<script> 
+$("#jumpscareImage").hide();
+$("#PickingUp").hide();
+$("#tofuNumber").hide();
+$("#counter").hide();
+</script>
+<script type="module" src="tofumaster.js"></script>
 </body>
 </html>
 
