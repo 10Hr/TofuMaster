@@ -3,6 +3,6 @@
 3D web horror game based off the famous game Slender: The Eight Pages
 
 You can play this experience here:
-https://tofumaster.grizos.org/
+https://ornate-semifreddo-0906ff.netlify.app/
 
 Credits to Johnathan Grizos for the awesome photos.
